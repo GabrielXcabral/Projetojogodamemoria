@@ -29,12 +29,8 @@ class Carta(id: Int, imagemId: Int) {
         this.imagemView = imageview;
     }
 
-    fun setVirarCarta() {
-        isViradaParaCima = true;
-    }
-
     fun virarcarta(carta: Carta){
-        carta.isViradaParaCima = !isViradaParaCima;
+        carta.isViradaParaCima = !isViradaParaCima
 
         if (carta.isViradaParaCima){
             imagemView?.setImageResource(carta.imagemId)
@@ -44,7 +40,5 @@ class Carta(id: Int, imagemId: Int) {
         }
 
     }
-
-
 
 }
